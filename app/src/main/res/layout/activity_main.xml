@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/coffee1">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+ >
+  <EditText
+      android:id="@+id/name"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:inputType="textCapWords"
+      android:hint="Name"
+      android:textColorHint="#fff"
+
+      />
+  <TextView
+
+      android:text="Topping"
+      android:textColor="#fff"
+      android:padding="10dp"
+      style="@style/HeaderTextStyle"
+      />
+  <LinearLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal">
+    <CheckBox
+        android:id="@+id/whippedCream"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:paddingLeft="10dp"
+        android:layout_marginLeft="8dp"
+        android:buttonTint="#fff"
+        android:scaleX="1.2"
+        android:scaleY="1.2"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Whipped Cream"
+        android:textSize="25sp"
+        android:textColor="#fff"
+        android:layout_marginBottom="10dp"/>
+
+  </LinearLayout>
+
+  <LinearLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal">
+    <CheckBox
+        android:id="@+id/chocolate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:paddingLeft="10dp"
+        android:layout_marginLeft="8dp"
+        android:buttonTint="#fff"
+        android:scaleX="1.2"
+        android:scaleY="1.2"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chocolate"
+        android:textSize="25sp"
+        android:textColor="#fff"
+        android:layout_marginBottom="10dp"/>
+
+  </LinearLayout>
+  <TextView
+
+      android:text="Quantity"
+      android:textColor="@android:color/primary_text_dark"
+
+      android:layout_marginLeft="10dp"
+      android:layout_marginBottom="16dp"
+      style="@style/HeaderTextStyle"/>
+
+
+  <LinearLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal">
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:onClick="decrement"
+        android:text="-" />
+
+    <TextView
+        android:id="@+id/quantity_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:text="0"
+        android:textColor="@android:color/white"
+        android:textSize="25sp" />
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:onClick="increment"
+        android:text="+" />
+
+  </LinearLayout>
+
+
+
+  <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Order"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="16dp"
+        android:onClick="submitOrder"/>
+  <RelativeLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Coffee Bar"
+        android:textSize="60dp"
+        android:layout_centerHorizontal="true"
+        android:paddingLeft="80dp"
+        android:paddingTop="260dp"
+        android:textColor="@android:color/holo_purple"
+        android:fontFamily="cursive"/>
+  </RelativeLayout>
+
+</LinearLayout>
+</ScrollView>
